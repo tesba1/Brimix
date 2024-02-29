@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #000;
+  color: #dddddd;
+  width: 80%;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+span {
+  color: #ffff00;
+}
+/* Header */
+.logo {
+  font-size: 42px;
+  font-weight: 700;
+}
+/* App */
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  margin: auto;
+  -webkit-backdrop-filter: blur(6.3px);
+  background-image: url("../images/apk-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app .content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 60%;
+}
+@media (max-width: 888px) {
+  .app {
+    flex-direction: column;
+  }
+  .app .content {
+    width: 100%;
+  }
+}
+.app .content h1 {
+  font-size: 34px;
+}
+.app .content p {
+  font-size: 22px;
+  line-height: 1.5rem;
+  padding: 10px 0;
+}
+.app .content ul {
+  line-height: 1.8rem;
+  font-size: 20px;
+}
+.app .content ul li {
+  position: relative;
+}
+.app .content ul li::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  left: -20px;
+  bottom: 6px;
+}
+.app .content button {
+  color: #222;
+  background-color: #ffff00;
+  padding: 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 3px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.app .content button:last-child {
+  margin-top: 10px;
+}
+.app .image img {
+  max-width: 300px;
+}
+/* Footer */
+footer {
+  text-align: center;
+  margin: 20px auto;
+  width: fit-content;
+}
+footer .icons {
+  border-bottom: 1px solid #fff;
+}
+footer a {
+  color: #888;
+  font-size: 32px;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 0.3s;
+}
+footer .facebook:hover {
+  color: #0b66ff;
+}
+footer .twitter:hover {
+  color: #08a0e9;
+}
+footer .instagram:hover {
+  color: #f58529;
+}
+footer .youtube:hover {
+  color: #e62117;
+}
+footer p {
+  font-size: 22px;
+}
